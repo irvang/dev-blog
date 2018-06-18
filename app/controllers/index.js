@@ -5,6 +5,7 @@ module.exports = {
 	blogpostController: require('./blogpostController'),
 	commentController: require('./commentController'),
 	middlewareController: require('./middlewareController'),
-	pagesController: require('./pagesController'),
+	viewsController: require('./viewsController'),
 	userController: require('./userController')
+	
 }

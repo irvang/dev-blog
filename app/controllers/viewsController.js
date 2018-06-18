@@ -15,6 +15,4 @@ module.exports = function (app) {
 	app.get('/search', (req, res) => {
 		res.send('You are in search')
 	});
-
-
 }
