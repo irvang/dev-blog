@@ -5,9 +5,10 @@ const bodyParser = require('body-parser');
 
 const port = process.env.PORT || 5000;
 
+require('./app/controllers/middlewareController')(app);
 require('./app/controllers/blogpostController')(app);
 require('./app/controllers/commentController')(app);
-// require('./app/controllers/userController')(app);
+require('./app/controllers/userController')(app);
 
 
 
