@@ -3,24 +3,24 @@ const express = require('express');
 module.exports = function (app) {
 	
 	//all
-	app.get ('/blogpost' , () => {
+	app.get ('/blogpost' , (req, res) => {
 
 	});
 
 	//single
-	app.get ('/blogpost/:id' , () => {
+	app.get ('/blogpost/:id' , (req, res) => {
 
 	});
 
-	app.post ('/blogpost' , () => {
+	app.post ('/blogpost' , (req, res) => {
 
 	});
 
-	app.put ('/blogpost/:id' , () => {
+	app.put ('/blogpost/:id' , (req, res) => {
 
 	});
 
-	app.delete ('/blogpost/:id' , () => {
+	app.delete ('/blogpost/:id' , (req, res) => {
 
 	});
 }

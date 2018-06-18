@@ -3,34 +3,34 @@ const express = require('express');
 module.exports = function (app) {
 
 	//all
-	app.get('/user/', () => {
+	app.get('/user/', (req, res) => {
 
 	});
 
 	//single
-	app.get('/user/:id', () => {
+	app.get('/user/:id', (req, res) => {
 
 	});
 
 	//name ???
-	app.get('/user/:name', () => {
+	app.get('/user/:name', (req, res) => {
 
 	});
 
 	//last name ???
-	app.get('/user/:lastname', () => {
+	app.get('/user/:lastname', (req, res) => {
 
 	});
 
-	app.post('/user/', () => {
+	app.post('/user/', (req, res) => {
 
 	});
 
-	app.put('/user/:id', () => {
+	app.put('/user/:id', (req, res) => {
 
 	});
 
-	app.delete('/user/:id', () => {
+	app.delete('/user/:id', (req, res) => {
 
 	});
 }

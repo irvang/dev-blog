@@ -1,26 +1,26 @@
 const express = require('express');
 
-module.exports = function (app) {
+module.exports = function commentController (app) {
 	
-	//all
-	app.get ('/comment/:blogpostId' , () => {
+	//all for a blogpost
+	app.get ('/comment/:blogpostId' , (req, res) => {
 
 	});
 
 	//single
-	app.get ('/comment/:blogpostId/:commentId' , () => {
+	app.get ('/comment/:blogpostId/:commentId' , (req, res) => {
 
 	});
 
-	app.post ('/comment/:blogpostId' , () => {
+	app.post ('/comment/:blogpostId' , (req, res) => {
 
 	});
 
-	app.put ('/comment/:blogpostId/:commentId' , () => {
+	app.put ('/comment/:blogpostId/:commentId' , (req, res) => {
 
 	});
 
-	app.delete ('/comment/:blogpostId/:commentId' , () => {
+	app.delete ('/comment/:blogpostId/:commentId' , (req, res) => {
 
 	});
 }
