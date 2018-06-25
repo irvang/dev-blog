@@ -4,13 +4,13 @@ const app = express();
 // const bodyParser = require('body-parser');
 
 const { blogpostController, commentController, middlewareController,
-	userController, viewsController } = require('./app/controllers/')
+	profileController, viewsController } = require('./app/controllers/')
 
 const port = process.env.PORT || 5000;
 
 blogpostController(app);
 commentController(app);
-userController(app);
+profileController(app);
 middlewareController(app);
 viewsController(app);
 

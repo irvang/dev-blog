@@ -1,26 +1,41 @@
 const express = require('express');
 
 module.exports = function (app) {
-	
-	//all
-	app.get ('/blogpost' , (req, res) => {
+
+	//Index - all
+	app.get('/blogposts', (req, res) => {
 
 	});
 
-	//single
-	app.get ('/blogpost/:id' , (req, res) => {
+	//New - form
+	app.get('/blogposts/new', (req, res) => {
 
 	});
 
-	app.post ('/blogpost' , (req, res) => {
+	//Show - single
+	app.get('/blogposts/:id', (req, res) => {
 
 	});
 
-	app.put ('/blogpost/:id' , (req, res) => {
+	//Edit - form
+	app.get('/blogposts/:id/edit', (req, res) => {
 
 	});
 
-	app.delete ('/blogpost/:id' , (req, res) => {
+	//Create
+	app.post('/blogposts', (req, res) => {
+
+	});
+
+	//Update
+	app.put('/blogposts/:id', (req, res) => {
+
+	});
+
+	//Destroy
+	app.delete('/blogposts/:id', (req, res) => {
 
 	});
 }
+
+/* https://codepen.io/urketadic/pen/oZRdRN  */

@@ -6,6 +6,6 @@ module.exports = {
 	commentController: require('./commentController'),
 	middlewareController: require('./middlewareController'),
 	viewsController: require('./viewsController'),
-	userController: require('./userController')
+	profileController: require('./profileController')
 	
 }

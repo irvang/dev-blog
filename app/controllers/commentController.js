@@ -1,26 +1,41 @@
 const express = require('express');
 
-module.exports = function commentController (app) {
-	
-	//all for a blogpost
-	app.get ('/comment/:blogpostId' , (req, res) => {
+
+//needs more planning
+module.exports = function commentsController(app) {
+
+	//Index - all
+	app.get('/blogposts/:blogpostId/comments', (req, res) => {
 
 	});
 
-	//single
-	app.get ('/comment/:blogpostId/:commentId' , (req, res) => {
+	//New - form
+	app.get('/blogposts/:blogpostId/comments/new', (req, res) => {
 
 	});
 
-	app.post ('/comment/:blogpostId' , (req, res) => {
+	//Show - single
+	app.get('/blogposts/:blogpostId/comments/:id', (req, res) => {
 
 	});
 
-	app.put ('/comment/:blogpostId/:commentId' , (req, res) => {
+	//Edit - form
+	app.get('/blogposts/:blogpostId/comments/:id/edit', (req, res) => {
 
 	});
 
-	app.delete ('/comment/:blogpostId/:commentId' , (req, res) => {
+	//Create
+	app.post('/blogposts/:blogpostId/comments', (req, res) => {
+
+	});
+
+	//Update
+	app.put('/blogposts/:blogpostId/comments/:id', (req, res) => {
+
+	});
+
+	//Destroy
+	app.delete('/blogposts/:blogpostId/comments/:id', (req, res) => {
 
 	});
 }
