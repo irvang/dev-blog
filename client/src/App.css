@@ -3,12 +3,20 @@ nav {
 }
 
 
-/* Ripped from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer */
+/* Ripped off from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer */
 footer {
     display: flex;
     padding: 10px 5px;
     background-color: #45a1ff;
-    color: #fff;
+	color: #fff;
+	
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	/* background-color: red; */
+	/* color: white; */
+	text-align: center;
 }
 
 footer p {

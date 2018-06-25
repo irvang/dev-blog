@@ -1,19 +1,32 @@
 import React, { Component } from 'react';
 
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import { Navbar } from './Components/layout/Navbar';
 import { Footer } from './Components/layout/Footer';
+import { Landing } from './Components/layout/Landing';
+import { Register } from './Components/auth/Register';
+import { Login } from './Components/auth/Login';
 
 import './App.css';
 
 class App extends Component {
 	render() {
 		return (
-			<div className="App">
-				<Navbar />
-				<h1> My React App </h1>
+			<Router>
+				<div className="App">
+					<Navbar />
 
-				<Footer />
-			</div>
+					{/* exact avoids multiple matching of the route */}
+					<Route exact path='/' component={Landing} />
+
+					<Route exact path="/register" component={Register} />
+
+					<Route exact path="/login" component={Login} />
+
+					<Footer />
+				</div>
+			</Router >
 		);
 	}
 }

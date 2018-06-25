@@ -7,11 +7,8 @@ export class Footer extends React.Component {
 				<footer>
 					&lt; FOOTER &gt; &nbsp;&nbsp;&nbsp;&nbsp;
 
-
-
-
 				{/* ©	copyright	&copy;	&#169; */}
-					<p>	&#169; Irving Angulo</p>
+					<p>	Copyright &copy; Irving Angulo</p>
 					<p>Contact info: my@email.com</p>
 
 					<ul>
