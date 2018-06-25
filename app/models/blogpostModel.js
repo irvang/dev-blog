@@ -5,12 +5,9 @@ const blogpostSchema = new mongoose.Schema({
 	content: String,
 	date: String,
 	user: String,//or objectId
-	comments: String, //objectId, top level comments
-	//subcomments
-
 	edited: Boolean,
-	isPublished: Boolean,
-	tags: [String]  //objectIds
+	isPublished: Boolean
+	// tags: [String]  //objectIds?
 
 });
 
