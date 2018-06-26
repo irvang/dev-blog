@@ -1,2 +1,0 @@
-Use  "git ls-tree -r master --name-only" to see list of files on master tree.
-See : https://stackoverflow.com/questions/15606955/how-can-i-make-git-show-a-list-of-the-files-that-are-being-tracked
