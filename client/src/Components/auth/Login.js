@@ -6,7 +6,7 @@ export class Login extends Component {
 		super();
 
 		this.state = {
-			userName: '',
+			username: '',
 			password: ''
 		}
 
@@ -34,17 +34,16 @@ export class Login extends Component {
 	render() {
 		return (
 			<div>
-				<h1> Login</h1>
-				{/* <form action="api/profile" method='post'> */}
-				<form onSubmit={this.onSubmit}>
+				<h1 className="centerForm"> Login</h1>
+				<form onSubmit={this.onSubmit} className="centerForm">
 
-					<input onChange={this.onChange} name="userName" type="text"
-						value={this.state.firstName} placeholder='userName' />
+					<input onChange={this.onChange} className=' form-control form-control-sm mb-2' name="username" type="text"
+						value={this.state.firstName} placeholder='username' />
 
-					<input onChange={this.onChange} name="password" type="text"
-						value={this.state.lastName} placeholder='password' />
+					<input onChange={this.onChange} className=' form-control form-control-sm mb-2' name="password" type="text"
+						value={this.state.lastName} placeholder='password *NOT SECURE*' />
 
-					<button type='submit'>Submit</button>
+					<button type='submit' className=' btn btn-primary mb-2'>Submit</button>
 
 					{/* <input onChange={this.onChange} name="webUrl" type="text" value={this.state.webUrl} placeholder='Website address' /> */}
 				</form>

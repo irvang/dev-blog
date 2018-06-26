@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
-	userName: String,
+
+	/* uname pass should be a different schema, 
+	profile should have the rest */
+	username: String,
 	password: String,
 	firstName: String,
 	lastName: String,

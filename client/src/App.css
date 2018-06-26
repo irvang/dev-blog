@@ -2,6 +2,10 @@ nav {
 	/* background-color: #a5d5ff */
 }
 
+.centerForm {
+	width: 40%;
+	margin: 0 auto;
+}
 
 /* Ripped off from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer */
 footer {

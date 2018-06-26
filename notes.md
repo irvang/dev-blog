@@ -7,3 +7,6 @@ https://stackoverflow.com/questions/39320393/jsx-or-html-autocompletion-in-visua
 
 #For vs emmet, see also: 
 https://code.visualstudio.com/docs/editor/emmet
+
+##Children in JSX
+https://reactjs.org/docs/jsx-in-depth.html  > Children in JSX
