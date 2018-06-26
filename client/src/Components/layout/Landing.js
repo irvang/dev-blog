@@ -8,7 +8,7 @@ export class Landing extends React.Component {
 	render() {
 		return (
 			<div>
-				<Main />
+				<Main title='this is the new text' subtitle='Some subtext'/>
 			</div>
 		)
 	}
