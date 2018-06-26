@@ -8,8 +8,8 @@ const userSchema = new mongoose.Schema({
 	password: String,
 	firstName: String,
 	lastName: String,
-	img: String, //would be a path
 	bio: String
+	// img: String, //would be a path
 	//url, ratings, experience
 });
 

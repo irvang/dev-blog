@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
+const { User } = require('../../models')
 
 const bodyParser = require('body-parser');
 
@@ -21,9 +22,23 @@ router.get('/new', (req, res) => {
 
 //Create
 router.post('/', (req, res) => {
-	const { firstName, lastName } = req.body;
-	console.log(req.body)
-	res.status(200).send('You submitted a profile for: ' + firstName + ' ' + lastName);
+	const { username, password, firstName, lastName, bio } = req.body;
+
+	User.create({
+		username: username,
+		password: password,
+		firstName: firstName,
+		lastName: lastName,
+		bio: bio
+	}).then(createdUser => {
+		console.log("You created a user!", createdUser);
+
+		res.status(200).send('Profile created for '
+			+ createdUser.firstName + ' ' + createdUser.lastName);
+	}).catch((err) => {
+		res.status(404).send(err);
+	})
+
 });
 
 //Show

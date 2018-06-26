@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-// const { blogpostRouter, commentController, middlewareController,
-// profileController, viewsController } = require('./app/routes/api')
+mongoose.connect('mongodb://theboss:abcd1234@ds119171.mlab.com:19171/dev-blog')
+	.then(() => console.log('MongoDB Connected'))
+	.catch(err => console.error(error));
+
 const { blogpostRouter, profileRouter } = require('./app/routes/api')
 
 
