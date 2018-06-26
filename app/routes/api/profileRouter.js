@@ -7,12 +7,15 @@ const bodyParser = require('body-parser');
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
+
 // Index
 // @route 	GET api/profile
 // @desc 	Tests profile route
 // @access 	Public
 router.get('/', (req, res) => {
-	res.send('you b in profile')
+	User.find({}).then(users => {
+		res.send(users);
+	}).catch(err => console.error(err));
 });
 
 //New

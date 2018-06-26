@@ -29,18 +29,32 @@ export class Landing extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Main title='this is the new text' subtitle='Some subtext'
-					newContent={this.state.newContent} >
-					<h1>This is a child</h1>
-					<p> This is a paragraph </p>
-					<p> This is another paragraph</p>
-					{/* Could be anothe component */}
-				</Main>
 
-				<button onClick={this.fetchThings(this.blogPostPath)}>Fetch things blogpost</button>
-				<button onClick={this.fetchThings(this.commentsPath)}>Fetch things comment</button>
-			</div>
+			<Main>
+				<h4> Welcome to Dev-Blog by Irving</h4>
+
+
+				<p>
+					The idea of this project is to create a blog using the MERN stack, and learn fro the challenges such a project entails.
+					</p>
+				<p>
+					In terms of development, the project presents real world challenges like the following:
+					</p>
+
+				<ul>
+					<li>Separating front and back end functionality.</li>
+					<li>Using React for the front-end.</li>
+					<li>Authentication (not present yet).</li>
+					
+					<li>Association of different models: blogpost, user, and comments.</li>
+					<li>Use of Express Router.</li>
+					<li>React router.</li>
+					<li>Promises used in the back end and the front end (Fetch API).</li>
+
+				</ul>
+			</Main>
+
+
 		)
 	}
 }

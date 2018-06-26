@@ -11,7 +11,8 @@ nav {
 footer {
     display: flex;
     padding: 10px 5px;
-    background-color: #45a1ff;
+	/* background-color: #45a1ff; */
+	background-color: hsla(30, 10%, 23%, 1);
 	color: #fff;
 	
 	position: fixed;

@@ -7,8 +7,10 @@ import { Footer } from './Components/layout/Footer';
 import { Landing } from './Components/views/Landing';
 import { Register } from './Components/auth/Register';
 import { Login } from './Components/auth/Login';
+import ShowUsers from './Components/views/ShowUsers';
 
 import './App.css';
+
 
 class App extends Component {
 	render() {
@@ -23,6 +25,8 @@ class App extends Component {
 					<Route exact path="/register" component={Register} />
 
 					<Route exact path="/login" component={Login} />
+
+					<Route exact path="/showUsers" component={ShowUsers} />
 
 					<Footer />
 				</div>
