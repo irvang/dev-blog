@@ -1,7 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-//Index
+// Index
+// @route 	GET api/profile
+// @desc 	Tests profile route
+// @access 	Public
 router.get('/', (req, res) => {
 	res.send('you b in profile')
 });

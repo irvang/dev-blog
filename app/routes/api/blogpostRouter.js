@@ -5,7 +5,10 @@ const commentsRouter = require('./commentRouter');
 //nested router.
 // router.use('/:id/comments', commentsRouter);
 
-//Index - all
+// Index - all
+// @route 	GET api/blogposts
+// @desc 	Tests blogposts route (desc = description)
+// @access 	Public
 router.get('/', (req, res) => {
 
 	res.send('At blogpost');
