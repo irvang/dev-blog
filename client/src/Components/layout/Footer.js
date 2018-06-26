@@ -5,7 +5,7 @@ export class Footer extends React.Component {
 		return (
 			<div>
 				<footer>
-					&lt; FOOTER &gt; &nbsp;&nbsp;&nbsp;&nbsp;
+					&lt;&lt; FOOTER &gt;&gt; &nbsp;&nbsp;&nbsp;&nbsp;
 
 				{/* ©	copyright	&copy;	&#169; */}
 					<p>	Copyright &copy; Irving Angulo</p>

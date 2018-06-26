@@ -2,8 +2,7 @@ const express = require('express');
 const router = express.Router();
 const commentsRouter = require('./commentRouter');
 
-//nested router.
-// router.use('/:id/comments', commentsRouter);
+//====ROUTER
 
 // Index - all
 // @route 	GET api/blogposts
@@ -44,11 +43,12 @@ router.delete('/:id', (req, res) => {
 
 });
 
+
+//====COMMENTS
 //Index - all
 router.get('/:id/comments/', (req, res) => {
-	console.log(req.url)
 
-	res.send('In commentss route, wohoooo!!!');
+	res.send('In comments route, wohoooo!!!');
 });
 
 //New - form
