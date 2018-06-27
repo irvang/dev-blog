@@ -3,8 +3,10 @@ import React from 'react'
 export class Footer extends React.Component {
 	render() {
 		return (
-			<div>
+
 				<footer>
+					<h1 className="invisibleHeader">Footer</h1>
+					
 					&lt;&lt; FOOTER &gt;&gt; &nbsp;&nbsp;&nbsp;&nbsp;
 
 				{/* ©	copyright	&copy;	&#169; */}
@@ -17,7 +19,7 @@ export class Footer extends React.Component {
 						<li>About</li>
 					</ul>
 				</footer>
-			</div>
+
 		)
 	}
 }

@@ -37,3 +37,25 @@ footer ul {
     padding-left: 0;
     list-style: none;
 }
+
+/* Any .invisibleHeader will be invisible to the eye, but show as part of the outline */
+.invisibleHeader {
+	clip-path: inset(100%);
+	clip: rect(1px 1px 1px 1px);
+	/* IE 6/7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	/* added line */
+	width: 1px;
+}
+
+.invisibleHeader:focus {
+	position: relative;
+	clip: auto;
+	width: auto;
+	height: auto;
+	overflow: auto;
+}

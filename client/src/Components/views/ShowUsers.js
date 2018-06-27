@@ -8,17 +8,36 @@ class ShowUsers extends Component {
 		this.state = {
 			users: ''
 		}
+
+		this.elementsTest = [
+			<h2 key="a"> Element 1</h2>,
+			<h2 key="b"> Element 2 </h2>,
+			<h2 key="c"> Element 3</h2>,
+			<h2 key="d"> Element4 </h2>];
 	}
 	componentDidMount() {
-		this.getUsers();
+		setTimeout(this.getUsers(), 50); 
 	}
 
 	getUsers() {
+
 		fetch(this.getPath)
 			.then(response => {
 				return response.text();
 			}).then(text => {
-				this.setState({ users: text });
+				text = JSON.parse(text);//convert to object array
+				let mapedUsers = text.map((user, i) => {
+					return (<p key={i}>
+						<strong>Name:</strong> {user.firstName}   &nbsp;
+						<strong>Last name: </strong>{user.lastName}&nbsp;
+						<strong>username: </strong>{user.username}&nbsp;
+						<strong>bio:</strong> {user.bio}&nbsp;
+					</p>)
+				});
+				this.setState({ users: mapedUsers });
+
+				// this.setState({ users: text });
+
 			}).catch(err => console.error(err));
 	}
 
@@ -26,7 +45,8 @@ class ShowUsers extends Component {
 		return (
 			<div>
 				A div
-				<p>{this.state.users}</p>
+				{this.state.users}
+				{this.elementsTest}
 			</div>
 		)
 	}
