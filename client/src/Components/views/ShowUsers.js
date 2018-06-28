@@ -14,11 +14,13 @@ class ShowUsers extends Component {
 			<h2 key="b"> Element 2 </h2>,
 			<h2 key="c"> Element 3</h2>,
 			<h2 key="d"> Element4 </h2>];
+
+		this.triedAgain = false;
 	}
 	componentDidMount() {
-		setTimeout(this.getUsers(), 50); 
+		this.getUsers();
 	}
-
+ 
 	getUsers() {
 
 		fetch(this.getPath)
@@ -36,15 +38,21 @@ class ShowUsers extends Component {
 				});
 				this.setState({ users: mapedUsers });
 
-				// this.setState({ users: text });
+				// this.setState({ users: text }); 
 
-			}).catch(err => console.error(err));
+			}).catch(err => {
+				console.error('ERROR' + err);
+				setTimeout(function () {
+					console.log('calling again');
+					this.getUsers();
+					this.triedAgain = true;
+				}.bind(this), 2000)
+			})
 	}
 
 	render() {
 		return (
-			<div>
-				A div
+			<div> 
 				{this.state.users}
 				{this.elementsTest}
 			</div>

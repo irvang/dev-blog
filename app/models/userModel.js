@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
 	lastName: String,
 	bio: String
 	// img: String, //would be a path
-	//url, ratings, experience
+	//url, ratings, experience 
 });
 
 const User = mongoose.model('User', userSchema);

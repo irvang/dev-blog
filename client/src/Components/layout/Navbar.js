@@ -7,10 +7,11 @@ export class Navbar extends React.Component {
 
 			<nav className="navbar navbar-expand-md navbar-light bg-secondary text-white-50" >
 				<h1 className="invisibleHeader">Navigation bar</h1>
+
 				<div className='collapse navbar-collapse'>
 					<span className='nav-item'> &lt; NAVBAR &gt; &nbsp;&nbsp;&nbsp;&nbsp;</span>
 
-					<ul className="navbar-nav mr-auto">
+			 		<ul className="navbar-nav mr-auto">
 
 						<li className='nav-item'><Link className='nav-link text-light' to="/">Home</Link></li>
 
