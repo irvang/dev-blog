@@ -45,7 +45,7 @@ class ShowUsers extends Component {
 				setTimeout(function () {
 					console.log('calling again');
 					this.getUsers();
-					this.triedAgain = true;
+					this.triedAgain = true; 
 				}.bind(this), 2000)
 			})
 	}
